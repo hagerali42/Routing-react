@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* nav bar */
+.nav-link{
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition:all 0.1s  ;
+  -webkit-transition:all 0.1s  ;
+  -moz-transition:all 0.1s  ;
+  -ms-transition:all 0.1s  ;
+  -o-transition:all 0.1s  ;
+}
+.nav-link:hover{
+  color: #1abc9c;
+  font-weight: bold;
+  }
+.test {
+  color: #fff!important;
+  background-color: #1abc9c;
+  font-weight: bold;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.heeder-icon .line {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  /* background-color: #fff; */
+  border-radius: 1rem;
+  border-color: #fff;
+ 
+}
+.heeder-icon {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.immg {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+#contact,#portfolio{
+  width: 100%;
+  height: 100vh;
+}
+
+#home,#about{
+  width: 100%;
+  height: 100vh;
+  background-color: #1abc9c;
+}
+
+
+.item{
+  position: relative;
+  
+}
+.layer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #1abc9c;
+  opacity: 0;
+  transition: all 0.7 ease;
+  -webkit-transition: all 0.7 ease;
+  -moz-transition: all 0.7 ease;
+  -ms-transition: all 0.7 ease;
+  -o-transition: all 0.7 ease;
+}
+.item:hover .layer{
+opacity: 0.8;
+}
+#boxContainer{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.175);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#success .btn{
+  background-color: #1abc9c;
+  color: #fff;
+  padding: 1.3rem 1.6rem;
+}
+#success .btn:checked,#success .btn:hover,#success .btn:focus,#success .btn:active{
+  color: #fff;
+  background-color: #1abc9c;
+}
+
+.floating-label-form-group {
+  position: relative;
+  border-bottom: 1px solid #e9ecef;
+}
+.floating-label-form-group textarea {
+  font-size: 1.5em;
+  position: relative;
+  z-index: 1;
+  padding-right: 0;
+  padding-left: 0;
+  resize: none;
+  border: none;
+  border-radius: 0;
+  background: none;
+   box-shadow: none !important
+}
+
+.floating-label-form-group input, .floating-label-form-group textarea {
+    font-size: 1.5em;
+    position: relative;
+    z-index: 5;
+    padding-right: 0;
+    padding-left: 0;
+    resize: none;
+    border: none;
+    border-radius: 0;
+    background: none;
+    box-shadow: none !important;
+}
+.form-control:focus {
+  color: #495057; 
+  background-color: #fff;
+  border-color: #6bebd1;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.25);
+}
+.icon{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: transparent;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.icon:hover{
+  background-color: white;
+  color: #2c3e50;
+}
+.fa-xmark  {
+  position: absolute;
+  z-index: 1;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #1abc9c ;
+}
